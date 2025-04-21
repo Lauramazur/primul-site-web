@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #fff8f0;
+  color: #4e342e;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d7ccc8;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: Edwardian Script ITC;
+  font-size: 2rem;
+  font-weight:normal;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #ffccbc;
+  color: #bf360c;
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffe0b2;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-family: Times New Roman;
+  color: #e35b5b;
+}
+
+.hero p {
+  font-family: Times New Roman;
+  font-size: 1.2rem;
+  color: #6d4c41;
+}
+
+/* Meniu Section */
+.meniu {
+  padding: 50px 20px;
+  background-color: #fff3e0;
+}
+
+.meniu h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #bf360c;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fbe9e7;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.card img{
+  border-radius: 25px!important;
+}
+.card, .card * {
+  font-family: Georgia, serif !important;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  font-family: Georgia;
+  color: #e35b5b;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contacte {
+  padding: 50px 20px;
+  background-color: #ffe0b2;
+}
+
+.contacte h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #bf360c;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #bcaaa4;
+  resize: none;
+}
+
+#contact-form button {
+  background-color: #a1887f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #8d6e63;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d7ccc8;
+  font-size: 0.9rem;
+}
+
+/* Container class for general layout */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.divider-bar {
+  height: 8px;
+  background: linear-gradient(to right, #ffb74d, #ff8a65);
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.promotii {
+  padding: 50px 20px;
+  background-color: #fff3e0;
+}
+
+.promotii h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.promo {
+  background-color:white!important;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.promo:hover {
+  transform: scale(1.05); /* Mărește cardul ușor la hover */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.recomandari {
+  padding: 50px 20px;
+  background-color: #fff3e0;
+}
+
+.recomandari h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Times New Roman;
+  margin-bottom: 30px;
+  color: #bf360c;
+}
+/* Recomandările zilei Section */
+.recomandari {
+  padding: 50px 20px;
+  background: white;
+  color: #4e342e;
+ 
+}
+
+.recomandari h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #bf360c;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fbe9e7;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #e35b5b;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Promoții Section */
+.promotii {
+  padding: 50px 20px;
+  background: #ffe0b2;
+  color: #4e342e;
+
+}
+
+.promotii h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: Times New Roman;
+  color: #bf360c;
+}
+
+.promo-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #ffe0b2;
+}
+
+.promo {
+  background: #ffe0b2;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promo h3 {
+  font-family:Georgia;
+  color: #e35b5b;
+  margin-bottom: 9px;
+}
+
+.promo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Divider Bar */
+.divider-bar {
+  height: 8px;
+  background: linear-gradient(to right, #ffb74d, #ff8a65); /* Bara gradată */
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content {
+  position: relative;
+  background-color: white;
+  padding: 2rem;
+  font-family: 'Times New Roman';
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+}
+.popup-content h2 {
+  margin: 0 0 2rem 0; 
+  font-size: 1.5rem;
+  color: #6d597a;
+  font-family: 'Times New Roman';
+  text-align: left;
+  padding-right: 2rem;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #e63946;
+  cursor: pointer;
+}
+#contact-form {
+  background-color: #f1f8e9; /* Fundal verde pal */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: none;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  flex-grow: 1; /* Permite formularului să se expandeze și să fie centrat pe verticală */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Inputuri și text area */
+#contact-form input,
+#contact-form textarea {
+  background-color: transparent;
+  border: 1px solid #ddd; /* Linie subțire pentru inputuri */
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Stilizare buton de trimitere */
+#contact-form button {
+  background-color:#bf360c ; /* Culoare buton */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #d7ccc8; /* Culoare pentru hover */
+}
+/* General reset pentru margini și padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Asigură că HTML și Body sunt 100% înălțime */
+html, body {
+  height: 100%; /* Împinge întregul conținut la înălțimea paginii */
+}
+
+/* Container principal care conține totul */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Face containerul să ocupe întreaga înălțime a ferestrei */
+}
+
+/* Secțiunea principală care conține tot conținutul */
+.contacte {
+  padding: 50px 20px;
+  background-color: white;
+  flex-grow: 1; /* Permite ca această secțiune să ocupe spațiul rămas */
+}
+
+/* Secțiunea footer */
+footer {
+  background-color: #d7ccc8;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}

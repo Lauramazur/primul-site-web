@@ -1,21 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Lumi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Cafe Lumi - General</title>
+  <link rel="stylesheet" href="file.css">
 </head>
 <body>
-    <div class="container">
-        <img src="images/11zon_resized (5).png" alt="Logo Cafe Lumi"/>
-        <button class="button button1"id="btnTrending" onclick="window.location.href='trending.html'">Trending</button>
-        <button class="button button2"id="btnHome" onclick="window.location.href='home.html'">Home</button>
-        <button class="button button3"id="btnMeniu" onclick="window.location.href='meniu.html'">Meniu</button>
-        <button class="button button4"id="btnDespre" onclick="window.location.href='despre.html'">Despre</button> 
-    </div>
-    <div id="content"></div>
+  <nav class="navbar">
+    <div class="logo">Cafe Lumi</div>
+    <ul class="nav-links">
+      <li><a href="index.html">General</a></li>
+      <li><a href="meniu.html">Meniu</a></li>
+      <li><a href="contacte.html">Contacte</a></li>
+    </ul>
+  </nav>
 
-    <script src="java.js"></script>
+  <section class="hero">
+    <h1>Bine ai venit la Cafe Lumi!</h1>
+    <p>Cafeneaua ta preferată cu deserturi delicioase și băuturi fascinante! Te așteptăm cu drag să descoperi atmosfera noastră caldă și relaxantă.</p>
+  </section>
+
+  <section class="recomandari">
+    <h2>Recomandările zilei</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/CHEESCAKE.jpg" alt="Cheesecake"/>
+        <h3>Mini Cheesecake</h3>
+        <p>Fini și aromați, cu fructe proaspete.</p>
+      </div>
+      <div class="card">
+        <img src="images/macarons.jpg" alt="macarons"/>
+        <h3>Macarons</h3>
+        <p>Culori pastel și arome variate.</p>
+      </div>
+      <div class="card">
+        <img src="images/cappucccino.jpg" alt="cappuccino"/>
+        <h3>Capuccino</h3>
+        <p>Cremos, cu spumă fină de lapte.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="promotii">
+    <h2>Promoții speciale</h2>
+    <div class="promo-container">
+      <div class="promo" onclick="openPopup('promo1')">
+        <h3>2 la preț de 1</h3>
+        <p>Valabil la macarons și cruffles cu căpșuni!</p>
+      </div>
+      <div class="promo" onclick="openPopup('promo2')">
+        <h3>Promoția săptămânii</h3>
+        <p>Reducere 20% la pancakes cu fructe și tort cu zmeură.</p>
+      </div>
+      <div class="promo" onclick="openPopup('promo3')">
+        <h3>Pentru clienți fideli</h3>
+        <p>Comandă și primește a 5-a băutură este din partea casei!</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup()">✖ </button>
+      <div id="popup-detail"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Cafe Lumi. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="file.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
