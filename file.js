@@ -1,8 +1,3 @@
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
-  alert("Mulțumim pentru mesaj! Te vom contacta în curând.");
-  this.reset();
-});
 function openPopup(promoId) {
   const popup = document.getElementById('popup');
   const detail = document.getElementById('popup-detail');
@@ -12,7 +7,7 @@ function openPopup(promoId) {
     detail.innerHTML = `
       <h2>Cumpără 2 la preț de 1</h2>
       <p>Acum ai ocazia să te bucuri de mai multe din deserturile noastre preferate și să plătești doar pentru unul. Singure sau alături de prieteni, macarons sau cruffles cu căpșuni sunt deserturile perfecte pentru orice moment. Gustă aromele autentice și lasă-te purtat de fiecare îmbucătură. Fie că îți faci un răsfăț personal sau împărtășești cu cineva special, oferta noastră este gândită să aducă mai multă plăcere și mai multă savoare. Încearcă-le și profită de această oportunitate pe întreaga perioadă a ofertei, din 20 până în 27 aprilie.</p>
-      <p>Perioada promoției: 1-7 Mai 2025</p>
+      <p>Perioada promoției: 1-10 Mai 2025</p>
     `;
   } else if (promoId === 'promo2') {
     detail.innerHTML = `
